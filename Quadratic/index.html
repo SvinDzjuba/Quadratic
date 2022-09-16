@@ -18,7 +18,10 @@
             width: 40%;
             margin-top: 50px
         }
-
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
         div {
             display: flex;
             align-items: center;
@@ -29,7 +32,7 @@
             width: 100px;
             height: 30px;
             margin: 10px;
-            text-align: center
+            text-align: left
         }
 
         #calculate {
@@ -45,12 +48,16 @@
     </style>
 
     <main>
+        <h1>Посчитать <br> корни квадратного уравнения</h1>
         <div>
-            <input type="text" id="input1">
-            <input type="text" id="input2">
-            <input type="text" id="input3">
+            <label for="input1">Первое число</label>
+            <input type="text" name="input1" id="input1" placeholder="Введите А">
+            <label for="input2">Второе число</label>
+            <input type="text" name="input2" id="input2" placeholder="Введите B">
+            <label for="input3">Третье число</label>
+            <input type="text" name="input3" id="input3" placeholder="Введите C">
         </div>
-        <div id="calculate">Calculate</div>
+        <div id="calculate">Посчитать</div>
         <hr>
         <p id="message"></p>
     </main>
